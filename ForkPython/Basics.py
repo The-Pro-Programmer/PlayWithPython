@@ -16,7 +16,22 @@ list1.append(str1)
 print(list1)
 
 #Input - Output
-name = input("Enter your name: ")
-num1 = int(input("Enter number"))
+name = input()
+num1 = int(input())
 print(name)
 print(num1)
+
+#Conditions
+if(num1>10):
+  print("Greater than 10")
+elif(num1<5):
+  print("Less than 5")
+else:
+  print("Else")
+    
+def hello():
+  print("Stepping into first function")
+  for i in range(5):
+    print(i)
+  
+hello()
