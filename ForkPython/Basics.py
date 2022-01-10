@@ -35,3 +35,7 @@ def hello():
     print(i)
   
 hello()
+
+#String functions
+S = "AbcdE"
+print(S.lower())
