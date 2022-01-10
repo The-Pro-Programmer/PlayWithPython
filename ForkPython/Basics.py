@@ -28,6 +28,13 @@ elif(num1<5):
   print("Less than 5")
 else:
   print("Else")
+  
+ def mean(self, N, A):
+  sum = 0
+  for a in A:
+    sum += a
+  sum = sum/N
+  return int(sum)
     
 def hello():
   print("Stepping into first function")
