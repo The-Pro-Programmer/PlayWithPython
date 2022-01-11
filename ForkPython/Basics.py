@@ -45,4 +45,29 @@ hello()
 
 #String functions
 S = "AbcdE"
+#Converting String to lower case
 print(S.lower())
+#Print reversed String
+print(S[::-1])
+#Delete alternate characters from String
+print(S[::2])
+
+#Remove Space from String
+   def modify(self, s):
+        # code here
+        op = ""
+        for ch in s:
+            if(ch!=' '):
+                op += ch
+        return op
+
+#Count camel case characters in String
+    def countCamelCase (self,s):
+        # your code here
+        count = 0
+        i = 0
+        for ch in s:
+            if(ch>='A' and ch<='Z'):
+                count+=1
+            i+=1
+        return count
