@@ -71,3 +71,13 @@ print(S[::2])
                 count+=1
             i+=1
         return count
+
+#Substring
+    def javaSub (ob, S, L, R):
+        # code here 
+        n = len(S)
+        if L<0:
+            L = 0
+        if R>(n-1):
+            R = n-2
+        return S[L:R+1]
