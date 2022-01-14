@@ -81,3 +81,15 @@ print(S[::2])
         if R>(n-1):
             R = n-2
         return S[L:R+1]
+
+ #Absulute diiferece between diagonals
+ def diagonalSumDifference(self,N,Grid):
+        #code here
+        ldiag = 0
+        rdiag = 0
+        
+        for i in range(N):
+            ldiag += Grid[i][i]
+            rdiag += Grid[N-1-i][i]
+        
+        return abs(ldiag - rdiag)
