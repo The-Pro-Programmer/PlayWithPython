@@ -93,3 +93,11 @@ print(S[::2])
             rdiag += Grid[N-1-i][i]
         
         return abs(ldiag - rdiag)
+
+#Regex: Remove all alphabets from String      
+	def removeCharacters(self, S):
+		# code here
+		result = ""
+		pattern = r'[a-zA-Z+$]'
+		result = re.sub(pattern,  '', S)
+		return result
